@@ -2,11 +2,11 @@
 
 ## Overview
 
-**cfg2html** is a little utility to collect the necessary system configuration files and system set-up to an ASCII file and HTML file. Simple to use and very helpful in disaster recovery situations. cfg2html is written entirely in the native language for system administration: as bash scripts. Experienced users and system admins can adapt or extend the cfg2html scripts to make it work for their particular cases.
+**cfg2html** is a little utility to collect the necessary system configuration files and system set-up to an ASCII file and HTML file. Simple to use and very helpful in disaster recovery situations. cfg2html is written entirely in the native language for system administration: as shell scripts. Experienced users and system admins can adapt or extend the cfg2html scripts to make it work for their particular cases either by using the plugin framework or by modifying the source code.
 
 ## Purpose
 
-cfg2html collects the system configuration into a HTML and a text file. cfg2html is the “Swiss army knife” for the sysadmins. It was written to get the necessary information to plan an update, to perform basic trouble shooting or performance analysis. As a bonus cfg2html creates a nice HTML and plain ASCII documentation from your System.
+cfg2html collects the system configuration into an HTML and a text file. cfg2html is the "Swiss Army knife" for the sysadmins. It was written to get all the information needed to plan an update, do basic troubleshooting or performance analysis. As a bonus, cfg2html creates a nice HTML and simple plain ASCII documentation of your system.
 
 This include the collection of Cron and At, installed Hardware, installed Software, Filesystems, Dump- and Swap-configuration, LVM, Network Settings, Kernel, System enhancements and Applications, Subsystems.
 
@@ -20,20 +20,25 @@ See our GitHub Source development tree <https://github.com/cfg2html/cfg2html> an
     cd cfg2html
     make help
 
-If you do not want to build cfg2html by your own, we have pre-build installations you can download from <http://www.cfg2html.com>
+If you do not want to build cfg2html by your own, we have pre-build installations that you can download from <http://www.cfg2html.com>
 
 ## Issue Tracker
 
-If you find a problem, a bug, want to discuss feature requests or have some bright new ideas please create a new issue  at our GitHub project pages <https://github.com/cfg2html/cfg2html/issues.> When using it, please ensure that any criticism you provide is constructive. Please do not use the issue tracker for general help and support on how to use cfg2html.
+If you find a problem or bug, want to discuss feature requests, or have some bright new ideas, please create a new issue on our GitHub project page <https://github.com/cfg2html/cfg2html/issues>
+When using it, please ensure that any criticism you provide is constructive. Please do not use the issue tracker for general help and assistance with using cfg2html.
+
+Feel free to open a pull request to fix a problem yourself or to contribute a new feature. 
 
 ## Contributing on GitHub
 
-To contribute to a project that is hosted on GitHub you can fork the project on github.com, then clone your fork locally, make a change, push back to GitHub and then send us a pull request, which will email the maintainer.
+To contribute to a project that is hosted on GitHub, you can fork the project on github.com, then clone your fork locally, make a change, push back to GitHub and then send us a merge request for your pull, which will email the maintainer.
+
+Please try to keep pull requests as small as possible - one new feature or fix set per pull request is preferred. This makes it easier to review and discuss your contribution.
 
 Fork project on github:
 
-    git clone https://github.com/my-user/project
-    cd project
+    git clone https://github.com/my-user/cfg2html
+    cd cfg2html
     repeat (edit files),(testing) until OK
     git add (modified files)
     git commit -m 'Explain what I changed'
@@ -55,7 +60,7 @@ NOTE: This is only a suggestion!
     To see a full documentation of such commit message convention, please look up the reference file gitchangelog.rc.reference, see <https://github.com/vaab/gitchangelog/blob/master/src/gitchangelog/gitchangelog.rc.reference>
 
 ----
-> $Id: README.md,v 6.10 2019/08/30 05:39:09 ralph Exp $
+> $Id: README.md,v 6.12 2020/06/17 19:56:41 ralph Exp $
 
 <!-- Atom:set encoding=utf8 lineEnding=unix grammar=md tabLength=4 useSoftTabs: -->
 <!-- vim:set fileencoding=utf8 fileformat=unix filetype=md tabstop=4 expandtab: -->

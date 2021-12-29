@@ -1,4 +1,4 @@
-# @(#) $Id: Makefile,v 6.18 2016/04/13 06:35:52 ralph Exp $
+# @(#) $Id: Makefile,v 6.19 2020/06/17 19:56:51 ralph Exp $
 # -------------------------------------------------------------------------
 # vim:ts=8:sw=4:sts=4
 
@@ -215,6 +215,7 @@ rpm: dist
 	cd .. ; \
 	rpmbuild -tb  \
 		--define "_rpmfilename %%{NAME}-%%{VERSION}-%%{RELEASE}.%%{ARCH}.rpm" \
+		--define "_sourcedir %(pwd)" \
 		--define "debug_package %{nil}" \
 		--define "_rpmdir %(pwd)" $(name)-$(distversion).tar.gz
 
